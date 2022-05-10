@@ -1,13 +1,12 @@
-import React, { Fragment } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 
-const PrimeraApp = () => {
+const PrimeraApp = ({ saludo = 'Hello World', subtitulo = 'First App' }) => {
 
-    const saludo = 'Hola Mundo'
-    
     return (
         <>
             <h1>{ saludo }</h1>
-            <p>Mi primera app</p>
+            <p>{ subtitulo }</p>
         </>
     )
 }
