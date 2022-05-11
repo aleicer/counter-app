@@ -15,7 +15,7 @@ const CounterApp = ({ value = 10 }) => {
         setCounter( value )
     }
 
-
+  
   return (
     <>
         <h1>Counter App</h1>
