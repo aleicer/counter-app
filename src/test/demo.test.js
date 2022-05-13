@@ -1,7 +1,11 @@
-test('primer prueba', () => {
-    const isActive = true
+describe('Pruebas en el archivo demo.test.js', () => {
+    test('Debe ser iguales los strings', () => {
+        const mensaje = 'Hola Mundo'
 
-    if (isActive){
-        throw new Error('No esta activo')
-    }
+        const mensaje2 = `Hola Mundo`
+
+        expect( mensaje ).toBe(mensaje2)
 })
+})
+
+
